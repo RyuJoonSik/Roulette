@@ -1,0 +1,21 @@
+@charset "utf-8";
+body {font-family: 'Noto Sans KR', sans-serif;}
+body,
+canvas,
+button,
+article,
+ul {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  background-color: white;
+  line-height: 1;
+}
+button:active span {position: relative;}
+li {list-style-type: none;}
+strong {font-weight: normal;}
+em {font-style: normal;}
+

@@ -1,0 +1,84 @@
+@charset "utf-8";
+.wrapper {
+  /* width: 80%; */
+  /* margin: 0 auto; */
+}
+.wrapper--article {
+  float: left;
+}
+.wrapper::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.district {
+  /* width: 130px; */
+  /* height: 728px; */
+  background-color: #eee;
+}
+.main-district {
+}
+/* .district--list--sub {
+  display: none;
+} */
+.main-district--list {
+  
+}
+/* .main-district--list--checked {
+  color: blue;
+} */
+.main-district--name {
+  /* font-weight: normal; */
+  cursor: pointer;
+}
+.main-district--name--checked {
+  font-weight: 600;
+  color: #2d98da;
+}
+.main-district--number {
+  margin-left: .3rem;
+  padding-right: .5rem;
+  font-weight: 500;
+  color: #20bf6b;
+}
+.sub-district {
+  text-indent: 1rem;
+}
+.sub-district--unchecked {
+  display: none;
+}
+.sub-district--list--checked {
+  font-weight: 500;
+  color: #fa8231;
+}
+.roulette {
+  /* float: left; */
+  /* width: 50%; */
+}
+.roulette--canvas {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  display: block;
+  /* box-sizing: border-box; */
+  /* border: 1px solid #000; */
+  background-color: #ddd;
+  /* transform: translate(-50%,-50%); */
+  /* margin: 0 auto; */
+}
+.roulette--button{
+  display: block;
+  width: 600px;
+  /* width: 600px; */
+  /* margin: 0 auto; */
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2;
+  cursor: pointer;
+}
+.roulette--button-search {
+  background-color: #20bf6b;
+}
+.roulette--button-start {
+  background-color: #3867d6;
+}
