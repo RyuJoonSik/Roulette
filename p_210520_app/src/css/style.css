@@ -1,0 +1,89 @@
+@charset "utf-8";
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+.wrapper::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.district {
+  position: relative;
+  float: left;
+  width: 20%;
+  background-color: #eee;
+  transition: all 0.25s;
+}
+.district__name {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.district__name--checked {
+  font-weight: 600;
+  color: #116ea8;
+}
+.district__number {
+  margin-left: 0.3rem;
+  padding-right: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #147407;
+}
+.district__button {
+  position: absolute;
+  background-color: #000;
+}
+.sub-district {
+  padding-left: 1rem;
+}
+.sub-district--unchecked {
+  display: none;
+}
+.sub-district__name {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sub-district__name--checked {
+  font-weight: 600;
+  color: #c04203;
+}
+.roulette {
+  float: left;
+  width: 80%;
+}
+.roulette__canvas {
+  display: block;
+  background-color: #d1d8e0;
+}
+.roulette__button {
+  width: 100%;
+  background-color: #b0bcd6;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2;
+}
+.roulette__button--activated {
+  background-color: #3867d6;
+  cursor: pointer;
+}
+
+@media screen and (orientation: portrait) {
+  .wrapper {
+    width: 100%;
+  }
+  .roulette {
+    width: 80%;
+  }
+  .district {
+    width: 20%;
+  }
+  .district__name {
+  }
+  .sub-district {
+    overflow: auto;
+    height: 10vh;
+    padding-left: 0.6rem;
+  }
+}

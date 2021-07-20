@@ -11,7 +11,7 @@ var CANVAS = {
     CANVAS.id = canvasId;
     CANVAS.className = "roulette--canvas";
     var PARENT = document.getElementById(parentId);
-    document.prepend === undefined ? PARENT.insertBefore(CANVAS, PARENT.firstChild) : PARENT.prepend(CANVAS);
+    "prepend" in Element.prototype ? PARENT.prepend(CANVAS) : PARENT.insertBefore(CANVAS, PARENT.firstChild);
   },
   getCanvas: function getCanvas(canvasId) {
     if (!TYPE.isString(canvasId)) {

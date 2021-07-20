@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* 
+  1 표시 display visibility
+  2 넘침 overflow -
+  3 흐름 float
+  4 위치 position top, right, left, bottom, z-index
+  5 크기 width & height -
+  6 갂격 margin & padding
+  7 테두리 border
+  8 배경 background
+  9 폰트 font
+  10 기타
+*/
+/* WRAP */
+.wrap {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+/* 룰렛 */
+.roulette {
+  height: 100%;
+}
+/* 룰렛 HEAD*/
+.roulette__header {
+  position: relative;
+  height: 10%;
+  background-color: #0f60b6;
+}
+.roulette__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+/* 룰렛 MAIN */
+.roulette__canvas {
+  display: block;
+  width: 100%;
+  height: 80%;
+  background-color: #eee;
+}
+.roulette__button {
+  width: 100%;
+  height: 10%;
+  border: 0;
+  background-color: #0f60b6;
+  color: #fff;
+  font-size: 2rem;
+}
+.district {
+  position: relative;
+  float: left;
+  width: 20%;
+  background-color: #eee;
+  transition: all 0.25s;
+}
+.district__name {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* 미디어 쿼리 Media Query */
+@media screen and (orientation: portrait) {
+  .wrap {
+    width: 100%;
+  }
+  .roulette__canvas {
+    height: 75%;
+  }
+  .roulette__button {
+    height: 15%;
+  }
+}
+
+/* .district__name--checked {
+  font-weight: 600;
+  color: #116ea8;
+}
+.district__number {
+  margin-left: 0.3rem;
+  padding-right: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #147407;
+}
+.district__button {
+  position: absolute;
+  background-color: #000;
+}
+.sub-district {
+  padding-left: 1rem;
+}
+.sub-district--unchecked {
+  display: none;
+}
+.sub-district__name {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sub-district__name--checked {
+  font-weight: 600;
+  color: #c04203;
+} */

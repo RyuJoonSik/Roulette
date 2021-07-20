@@ -1,0 +1,16 @@
+{
+  "name": "My Roulette",
+  "short_name": "Roulette",
+  "icons": [
+    {
+      "src": "/src/assets/icon/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#0f60b6",
+  "background_color": "#0f60b6",
+  "display": "standalone",
+  "start_url": "/public/index.html"
+}

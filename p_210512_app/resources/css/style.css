@@ -11,20 +11,24 @@
   width: 120px;
   background-color: #eee;
 }
-.main-district--name {cursor: pointer;}
+.main-district--name {
+  cursor: pointer;
+}
 .main-district--name--checked {
   font-weight: 600;
   color: #2d98da;
 }
 .main-district--number {
-  margin-left: .3rem;
-  padding-right: .5rem;
+  margin-left: 0.3rem;
+  padding-right: 0.5rem;
   font-weight: 500;
   color: #20bf6b;
 }
-.sub-district {text-indent: 1rem;
+.sub-district {
+  text-indent: 1rem;
 }
-.sub-district--unchecked {display: none;
+.sub-district--unchecked {
+  display: none;
 }
 .sub-district--list {
   text-indent: 1rem;
@@ -39,7 +43,7 @@
   margin: 0 auto;
   background-color: #d1d8e0;
 }
-.roulette--button{
+.roulette--button {
   display: block;
   width: 100%;
   color: #fff;
@@ -47,4 +51,6 @@
   line-height: 2;
   cursor: pointer;
 }
-.roulette--button-start {background-color: #3867d6;}
+.roulette--button-start {
+  background-color: #3867d6;
+}

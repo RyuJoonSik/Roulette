@@ -1,0 +1,55 @@
+@charset "utf-8";
+html,
+body,
+div,
+span,
+h1,
+h2,
+p,
+i,
+ul,
+li,
+article,
+canvas,
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ul {
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+button > span {
+  position: relative;
+}
+button:focus {
+  outline: none;
+}
+body.tab :focus {
+  outline: #f0a solid 5px;
+}
+
+.ir {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}

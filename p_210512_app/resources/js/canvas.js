@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 // 캔버스
 
 const CANVAS = {
@@ -13,8 +13,9 @@ const CANVAS = {
     CANVAS.className = `roulette--canvas`;
 
     const PARENT = document.getElementById(parentId);
-    document.prepend === undefined ? 
-      PARENT.insertBefore(CANVAS, PARENT.firstChild) : PARENT.prepend(CANVAS);
+    `prepend` in Element.prototype
+      ? PARENT.prepend(CANVAS)
+      : PARENT.insertBefore(CANVAS, PARENT.firstChild);
   },
 
   getCanvas(canvasId) {
@@ -24,7 +25,7 @@ const CANVAS = {
     }
 
     const CANVAS = document.getElementById(canvasId);
-  
+
     return CANVAS;
   },
 
@@ -38,5 +39,5 @@ const CANVAS = {
     const PARENT = canvas.parentNode;
     CANVAS.width = PARENT.offsetWidth;
     CANVAS.height = PARENT.offsetWidth;
-  }
+  },
 };

@@ -69,6 +69,7 @@ const HTML_STRUCTURE = {
       const FRAGMENT = document.createDocumentFragment();
       for (const DISTRICT in data) {
         if (data.hasOwnProperty(DISTRICT)) {
+          console.log(data.hasOwnProperty(DISTRICT));
           const LI = HTML_STRUCTURE.createEl(`LI`);
           const STRONG = HTML_STRUCTURE.createEl(`STRONG`, DISTRICT);
           const EM = HTML_STRUCTURE.createEl(`EM`);
@@ -93,11 +94,11 @@ const HTML_STRUCTURE = {
       }
 
       const DISTRICT_LIST = document.getElementById(`districtList`);
-      DISTRICT_LIST.appendChild(FRAGMENT);;
+      DISTRICT_LIST.appendChild(FRAGMENT);
     }
 
 
-    if (!!window.fetch) {
+    if (`fetch` in window) {
       fetch(`/resources/data/district.json`)
         .then(response => response.json())
         .then(data => fetchList(data));
