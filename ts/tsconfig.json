@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "target": "esnext",
-    "outDir": "src/js"
-  },
-  "include": [
-    "src/ts" // <-- change this to where your source files are
-  ]
-}

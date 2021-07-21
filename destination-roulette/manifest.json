@@ -12,5 +12,5 @@
   "theme_color": "#0f60b6",
   "background_color": "#0f60b6",
   "display": "standalone",
-  "start_url": "/public/index.html"
+  "start_url": "/"
 }

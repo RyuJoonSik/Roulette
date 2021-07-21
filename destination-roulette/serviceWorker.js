@@ -1,45 +1,42 @@
-const STATIC_ASSETS = ['/', '/public/main.js', '/src/assets/json/district.json'];
+const ASSETS_URLS = [
+  '/',
+  '/public/main.js',
+  '/src/assets/json/district.json',
+  '/src/assets/icon/favicon.ico',
+  '/manifest.json',
+  '/src/assets/icon/android-chrome-512x512.png',
+];
+const CACHE_NAME = 'my-cache';
 
-async function cacheFirst(req) {
-  const CACHED_RES = await caches.match(req);
+/* 서비스 워커 설치 */
+self.addEventListener('install', function (event) {
+  /* 설치 단계 */
+  event.waitUntil(
+    /* 1.원하는 캐시 이름을 사용하여 caches.open() 호출 */
+    caches.open(CACHE_NAME).then(function (cache) {
+      console.log('Opened cache');
 
-  /* 아무것도 없을 경우 undefined를 반환하거나 캐시 요청 자체를 반환 */
-  return CACHED_RES || (await fetch(req));
-}
+      /* 2. URL 배열을 전달 */
+      return cache.addAll(ASSETS_URLS);
 
-async function networkFirst(req) {
-  const CACHE = await caches.open('dynamic-cache');
-
-  /* 패치가 진행되고 불가능한 경우 정적 캐시가 반환 */
-  try {
-    const RES = await fetch(req);
-
-    CACHE.put(req, RES.clone());
-
-    return RES;
-  } catch (error) {
-    return await CACHE.match(req);
-  }
-}
-
-/* install 이벤트는 브라우저가 새로운 서비스 워커를 감지할 때마다 호출 */
-self.addEventListener('install', async (event) => {
-  /* 
-    캐시 저장소에 'static-cache' 이름의 캐시를 만들어 캐싱할 자원들의 URL 배열을 추가
-   */
-  const CACHE = await caches.open('static-cache');
-
-  CACHE.addAll(STATIC_ASSETS);
+      /* 3 모든 파일이 성공적으로 캐시되면 서비스 워커 설치 */
+    })
+  );
 });
 
-/* 캐싱된 자원 가져오기 */
-self.addEventListener('fetch', (event) => {
-  const REQ = event.request;
-  const MY_URL = new URL(REQ.url);
-  /* 캐시가 처음 생성된 것인지 */
-  if (MY_URL.origin === location.url) {
-    event.respondWith(cacheFirst(REQ));
-  } else {
-    event.respondWith(networkFirst(REQ));
-  }
+/* 요청 캐시 및 반환 */
+self.addEventListener('fetch', function (event) {
+  event.respondWith(
+    /* 요청 확인 후 서비스 워커가 생성한 캐시에서 일치하는 캐시가 있는지 탐색 */
+    caches.match(event.request).then(function (response) {
+      if (response) {
+        console.log('일치하는 캐시가 존재합니다.');
+        /* 일치하는 값이 있을 경우 */
+        return response;
+      }
+
+      /* 네트워크에서 검색한 데이터가 있으면 해당 데이터를 반환 */
+      return fetch(event.request);
+    })
+  );
 });

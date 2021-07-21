@@ -2,7 +2,6 @@ const HTTP = require('http');
 const FS = require('fs');
 const PATH = require('path');
 const TYPE = {
-  '.html': 'text/html',
   '.ico': 'image/x-icon',
   '.png': 'image/x-icon',
   '.js': 'application/javascript',
@@ -26,6 +25,10 @@ HTTP.createServer((req, res) => {
       try {
         if (req.url === '/') {
           data = FS.readFileSync('./public/index.html');
+
+          res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+
+          return res.end(data);
         } else if (EXTENSION === '.ico') {
           data = FS.readFileSync(`.${req.url}`);
         } else if (EXTENSION === '.js') {

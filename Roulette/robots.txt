@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /
-Allow: /$
-Allow: /src/assets/icon/favicon.ico
-Allow: /src/js/main.js
-Allow: /src/css
