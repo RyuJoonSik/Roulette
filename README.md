@@ -28,8 +28,7 @@ __*설치 후에는 오프라인 상태에서도 사용 가능합니다.__
 데스크탑|크롬|윈도우 10|메뉴 -> 도구 더보기 -> 바로가기 만들기 (창으로 열기 체크 후 만들기 클릭)
 데스크탑|네이버 웨일|윈도우 10|메뉴 -> My Roulette 설치
 
-# 개발 환경
-## 주요 파일
+## 디렉터리 구조  
 ```  
 .  
 ├── ...   
@@ -39,20 +38,31 @@ __*설치 후에는 오프라인 상태에서도 사용 가능합니다.__
 │   ├── server.js                   # node.js 서버 파일 입니다.  
 ├── src            
 │   ├── assets
-│   │   ├── icon                    # 파비콘, 모바일 화면에서 보이는 앱 아이콘을 포함하고 있습니다.
+│   │   ├── icon                    # 파비콘, 모바일 화면에서 보이는 앱 아이콘 파일을 포함하고 있습니다.
 │   │   ├── json                    # 대한민국 행정구역 json 파일을 포함하고 있습니다.  
 │   ├── css  
 │   │   ├── reset.css               # 모바일, 데스크탑 환경에서 사용되는 태그 요소들의 기본 스타일을 초기화합니다.  
-│   │   ├── style.css               # 반응형에 맞추어 실제 환경에 적용될 스타일이 작성되어 있습니다.
+│   │   ├── style.css               # 반응형에 맞추어 실제 브라우저 환경에서 적용될 스타일이 작성되어 있습니다.
 │   ├── js
 │   │   ├── canvas.js               # 룰렛과 관련된 프로퍼티, 메서드가 정의되어 있습니다.
-│   │   ├── data-type-checker.js    # 매개변수를 가지는 함수들을 호출 할 경우 인자의 데이터 타입을 검증하기 위한 함수들이 정의되어있습니다. 
-│   │   ├── dialog.js
-│   │   ├── index.js
-├── serviceWorker.js                   # Source files (alternatively `lib` or `app`)  
-├── package.json                  # Automated tests (alternatively `spec` or `tests`)  
-├── manifest.json                 # Tools and utilities  
+│   │   ├── data-type-checker.js    # 함수 호출 시 인자의 데이터 타입을 검증하기 위한 메서드들이 정의되어 있습니다. 
+│   │   ├── dialog.js               # 대화상자와 관련된 프로퍼티, 메서드가 정의되어 있습니다.  
+│   │   ├── index.js                # 서비스 워커 등록과 DOM 엘리먼트 노드들의 이벤트 처리가 정의되어 있습니다.  
+├── serviceWorker.js                # 서비스 워커의 이벤트들이 정의되어 있습니다.
+├── package.json                    # 프로젝트에 설치된 패키지들의 정보를 담고있습니다.  
+├── manifest.json                   # 앱 설치 시 필요한 정보들이 작성되어 있습니다.
 └──...
-```
+```  
+
+# 개발 환경  
+__HTML__, __CSS__ 과 __ES5__ 로 개발한 뒤 , __ES6__ 로 코드를 수정하고 그에따라 바벨과 웹팩을 사용하여 IE11 와의 호환성을 지켜주었습니다.
+## 언어  
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white" width="300" height="100"/>  
+
++ 시멘틱 태그를 사용하였습니다.
+
+<img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS3&logoColor=white" width="300" height="100"/>  
+
++ 시멘틱 태그를 사용하였습니다.
 
 
