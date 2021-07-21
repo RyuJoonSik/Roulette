@@ -55,7 +55,8 @@ __*설치 후에는 오프라인 상태에서도 사용 가능합니다.__
 ```  
 
 # 개발 환경  
-__HTML__, __CSS__ 과 __ES5__ 로 개발한 뒤 , __ES6__ 로 코드를 수정하고 그에따라 __Babel__ 과 __Webpack__ 을 사용하여 IE11 와의 호환성을 지켜주었습니다.
+__HTML__, __CSS__, __ES5__ 로 개발한 뒤 , __ES6__ 로 코드를 수정하고 __Babel__ 을 통해 코드를 변환시켜 주었습니다. 그 후 **PWA** 의 기능들을 추가하고 **Webpack** 을 통해 파일을 통합시켜 준 뒤, **라즈베리 파이**와 **Node.js** 로 최종 결과물을 확인 해 보았습니다.
+
 ## 언어  
 **[NHN 코딩 컨벤션](http://www.tutor4u.co.kr/data/member/test16.pdf "스타일 가이드1")**, **[TOAST UI HTML/CSS/Sass 스타일 가이드](https://ui.toast.com/fe-guide/ko_HTMLCSS "스타일 가이드2")**, **[TOAST UI JS 코딩 컨벤션](https://ui.toast.com/fe-guide/ko_CODING-CONVENTION "스타일 가이드3")** 을 참고하여 작성하였습니다.  
 
@@ -79,6 +80,11 @@ __HTML__, __CSS__ 과 __ES5__ 로 개발한 뒤 , __ES6__ 로 코드를 수정�
 <img src="https://img.shields.io/badge/JS-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white" width="300" height="100"/>  
 
 + **ES5** 로 처음 기획한 기능들을 작성하고, 추후 편의성과 생산성을 위해 **ES6**로 코드를 수정하며 진행하였습니다.
++ **ES6** 코드는 **Babel** 을 통해 변환시켜 주었습니다.
++ **fetch** 함수는 기존 **ES5** 과 함께 작성했던 **XMLHttpRequest** 를 사용한 함수로 로 폴리필을 적용시켜주었습니다.
++ 룰렛은 텍스트 컬러(#fff)와 **명도 대비 4.5** 이상인 색상들로만 이루어져있습니다.
++ **Pixel ratio** 와 **반응형**에 맞추어 룰렛이 그려지도록 하였습니다.
++ 함수 인자들의 **데이터 타입을 확인**하는 메서드를 갖고있는 객체를 정의하여 진행하였습니다.
 + 
 
 ## 브라우저
