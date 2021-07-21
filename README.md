@@ -55,7 +55,7 @@ __*설치 후에는 오프라인 상태에서도 사용 가능합니다.__
 ```  
 
 # 개발 환경  
-__HTML__, __CSS__ 과 __ES5__ 로 개발한 뒤 , __ES6__ 로 코드를 수정하고 그에따라 바벨과 웹팩을 사용하여 IE11 와의 호환성을 지켜주었습니다.
+__HTML__, __CSS__ 과 __ES5__ 로 개발한 뒤 , __ES6__ 로 코드를 수정하고 그에따라 __Babel__ 과 __Webpack__ 을 사용하여 IE11 와의 호환성을 지켜주었습니다.
 ## 언어  
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white" width="300" height="100"/>  
 
@@ -65,4 +65,9 @@ __HTML__, __CSS__ 과 __ES5__ 로 개발한 뒤 , __ES6__ 로 코드를 수정�
 
 + 시멘틱 태그를 사용하였습니다.
 
+<img src="https://img.shields.io/badge/JS-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white" width="300" height="100"/>  
 
++ 시멘틱 태그를 사용하였습니다.
+
+## 브라우저
+<img src="https://img.shields.io/badge/Google Chrome-4285F4?style=flat-square&logo=GoogleChrome&logoColor=white" width="200" height="50"/> <img src="https://img.shields.io/badge/Internet Explorer 11-0076D6?style=flat-square&logo=InternetExplorer&logoColor=white" width="200" height="50"/> <img src="https://img.shields.io/badge/Microsoft Edge-0078D7?style=flat-square&logo=MicrosoftEdge&logoColor=white" width="200" height="50"/>
