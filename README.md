@@ -57,17 +57,33 @@ __*설치 후에는 오프라인 상태에서도 사용 가능합니다.__
 # 개발 환경  
 __HTML__, __CSS__ 과 __ES5__ 로 개발한 뒤 , __ES6__ 로 코드를 수정하고 그에따라 __Babel__ 과 __Webpack__ 을 사용하여 IE11 와의 호환성을 지켜주었습니다.
 ## 언어  
+**[NHN 코딩 컨벤션](http://www.tutor4u.co.kr/data/member/test16.pdf "스타일 가이드1")**, **[TOAST UI HTML/CSS/Sass 스타일 가이드](https://ui.toast.com/fe-guide/ko_HTMLCSS "스타일 가이드2")**, **[TOAST UI JS 코딩 컨벤션](https://ui.toast.com/fe-guide/ko_CODING-CONVENTION "스타일 가이드3")** 을 참고하여 작성하였습니다.  
+
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white" width="300" height="100"/>  
 
-+ 시멘틱 태그를 사용하였습니다.
++ **IE11** 에서도 지원하는 태그로 작성하였습니다.
++ **시멘틱 태그**를 사용하였습니다.
++ **SEO 관련 태그**를 사용하였습니다.
++ **[HTML Validation Service](https://validator.w3.org/ "HTML 검사")** 로 코드를 검사하였습니다.
++ **[WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/ "접근성 검사")** 로 접근성을 검사하였습니다.
++ **'+'** 버튼 아이콘과 canvas 태그 미지원 시 **대체 텍스트**를 제공하도록 하였습니다.
 
 <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS3&logoColor=white" width="300" height="100"/>  
 
-+ 시멘틱 태그를 사용하였습니다.
++ **IE11** 에서도 지원하는 속성으로 작성하였습니다.
++ **BEM 방법론**을 사용하였습니다.
++ **[CSS Validation Service](https://jigsaw.w3.org/css-validator/ "CSS 검사")** 와 **[CSS Lint](http://csslint.net/ "CSS Lint")** 로 코드를 검사하였습니다.
++ **[reset.css](https://meyerweb.com/eric/tools/css/reset/ "reset.css")** 에서 실제 사용된 태그들의 스타일 초기화 코드만 남겨두었습니다.
++ 아이폰8과 갤럭시 탭 A 10.1에 실제로 접속해보며 **반응형** 코드를 작성하였습니다.
 
 <img src="https://img.shields.io/badge/JS-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white" width="300" height="100"/>  
 
-+ 시멘틱 태그를 사용하였습니다.
++ **ES5** 로 처음 기획한 기능들을 작성하고, 추후 편의성과 생산성을 위해 **ES6**로 코드를 수정하며 진행하였습니다.
++ 
 
 ## 브라우저
-<img src="https://img.shields.io/badge/Google Chrome-4285F4?style=flat-square&logo=GoogleChrome&logoColor=white" width="200" height="50"/> <img src="https://img.shields.io/badge/Internet Explorer 11-0076D6?style=flat-square&logo=InternetExplorer&logoColor=white" width="200" height="50"/> <img src="https://img.shields.io/badge/Microsoft Edge-0078D7?style=flat-square&logo=MicrosoftEdge&logoColor=white" width="200" height="50"/>
+> <img src="https://icons.iconarchive.com/icons/google/chrome/64/Google-Chrome-icon.png"/>  
+
+> <img src="https://img.icons8.com/color/64/000000/ms-edge-new.png"/>
+
+> <img src="https://img.shields.io/badge/Microsoft Edge-0078D7?style=flat-square&logo=MicrosoftEdge&logoColor=white" width="200" height="50"/>
