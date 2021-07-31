@@ -3,6 +3,14 @@
 
 > 친구들과 여행 계획을 세우는 중, 각자의 상황을 고려하다 보니 목적지를 정하는 것이 가장 큰 문제였습니다. 차라리 누군가가 정해주는 게 서로의 건강에 이로울 거라 생각했고 여기에서 아이디어를 얻게 되었습니다.
 
+## :earth_asia: 브라우저
+브라우저|<img src="https://icons.iconarchive.com/icons/google/chrome/64/Google-Chrome-icon.png"/>|<img src="https://img.icons8.com/color/64/000000/ms-edge-new.png"/>|<img src="https://icons.iconarchive.com/icons/tatice/cristal-intense/64/Internet-Explorer-icon.png"/>|<img src="https://cdn.icon-icons.com/icons2/2108/PNG/64/firefox_icon_130939.png">|<img src="https://cdn.icon-icons.com/icons2/2108/PNG/64/opera_icon_130863.png">|<img src="https://w.namu.la/s/1ecd9d98e849872b3fa5a0f9f3add277d373212aabc10d9ef1e705847324abb342e420df735182b9db9f4ef20e6a0a2dbdd9b5d27c4d61dae4d3cfcd0f21c54628832e200a844de8c01899a6b255b5a9920ba0dcea7d3eae4d886cb68ba2c22d" width="64">|<img src="https://img.icons8.com/color/64/000000/chromium.png">|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Samsung_Internet_Logo.png/64px-Samsung_Internet_Logo.png">|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Safari_browser_logo.svg/64px-Safari_browser_logo.svg.png">
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+운영체제|윈도우 10|윈도우 10|윈도우 10|윈도우 10|윈도우 10|윈도우 10|라즈비안|IOS|안드로이드
+버전|Latest|Latest|11|Latest|Latest|Latest|Latest|Latest|Latest
+데스크톱|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:
+모바일|:white_check_mark:|||||||:white_check_mark:|:white_check_mark:
+
 ## :mag: 사용 방법
 :bulb: **방향 키로도 조작 가능합니다.(다음 : Tab, 이전 : Shft + Tab, 클릭 : Enter 혹은 Space)**
 
@@ -22,12 +30,12 @@
 
 환경|브라우저|운영체제|방법
 :---:|:---:|:---:|:---:
-:iphone:|사파리|IOS|공유(브라우저 하단 3번째 버튼) -> '홈 화면에 추가'
-:iphone:|크롬|안드로이드|메뉴 -> '앱 설치'
-:iphone:|삼성 인터넷|안드로이드|주소 창 '설치' 버튼 클릭
-:computer:|MS 엣지|윈도우 10|주소 창 '설치' 버튼 클릭
-:computer:|크롬|윈도우 10|메뉴 -> '도구 더보기' -> '바로가기 만들기' ('창으로 열기' 체크)
-:computer:|네이버 웨일|윈도우 10|메뉴 -> 'My Roulette 설치'
+:iphone:|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Safari_browser_logo.svg/64px-Safari_browser_logo.svg.png" width="32">|IOS|공유(브라우저 하단 3번째 버튼) -> '홈 화면에 추가'
+:iphone:|<img src="https://icons.iconarchive.com/icons/google/chrome/64/Google-Chrome-icon.png" width="32">|안드로이드|메뉴 -> '앱 설치'
+:iphone:|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Samsung_Internet_Logo.png/64px-Samsung_Internet_Logo.png" width="32">|안드로이드|주소 창 '설치' 버튼 클릭
+:computer:|<img src="https://img.icons8.com/color/64/000000/ms-edge-new.png" width="32"/>|윈도우 10|주소 창 '설치' 버튼 클릭
+:computer:|<img src="https://icons.iconarchive.com/icons/google/chrome/64/Google-Chrome-icon.png" width="32">|윈도우 10|메뉴 -> '도구 더보기' -> '바로가기 만들기' ('창으로 열기' 체크)
+:computer:|<img src="https://w.namu.la/s/1ecd9d98e849872b3fa5a0f9f3add277d373212aabc10d9ef1e705847324abb342e420df735182b9db9f4ef20e6a0a2dbdd9b5d27c4d61dae4d3cfcd0f21c54628832e200a844de8c01899a6b255b5a9920ba0dcea7d3eae4d886cb68ba2c22d" width="32">|윈도우 10|메뉴 -> 'My Roulette 설치'
 
 ## :file_folder: 디렉터리 구조  
 ```  
@@ -58,9 +66,6 @@
 # :globe_with_meridians: 개발  
 **IE11**와의 호환성을 염두에 두고 시작하였습니다. **HTML**, **CSS**, **ES5**로 개발한 뒤 , **ES6**로 코드를 수정하고 **Babel**을 통해 코드를 변환시켜 주었습니다. 그 후 **PWA**의 기능들을 추가하고 **Webpack**을 통해 파일을 통합시켜 준 뒤, **라즈베리 파이**와 **Node.js** 서버로 최종 결과물을 확인해 보았습니다.
 
-# 웹 표준
-
-
 ## :speech_balloon: 언어  
 **[NHN 코딩 컨벤션](http://www.tutor4u.co.kr/data/member/test16.pdf "스타일 가이드1")**, **[TOAST UI HTML/CSS/Sass 스타일 가이드](https://ui.toast.com/fe-guide/ko_HTMLCSS "스타일 가이드2")**, **[TOAST UI JS 코딩 컨벤션](https://ui.toast.com/fe-guide/ko_CODING-CONVENTION "스타일 가이드3")** 을 참고하여 작성하였습니다.  
 
@@ -84,7 +89,7 @@
 
 <img src="https://img.shields.io/badge/JS-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white" width="300" height="100"/>  
 
-+ **ES5**로 처음 생각한 기능들을 구현하고, 추후 편의성과 생산성을 위해 **ES6**로 코드를 수정하며 진행하였습니다.
++ **ES5**로 처음 생각한 기능들을 구현하고, 편의성을 위해 **ES6**로 코드를 수정하며 진행하였습니다.
 + **ES6**코드는 **Babel**을 통해 변환시켜 주었습니다.
 + **fetch** 함수는 기존 **ES5**과 함께 작성했던 **XMLHttpRequest**를 사용한 함수로 폴리필을 적용시켜주었습니다.
 + 룰렛은 텍스트 컬러(#fff)와 **명도 대비 4.5** 이상인 색상들로만 이루어져 있습니다.
@@ -93,14 +98,6 @@
 + 대화상자는 **재사용**이 가능하고, 모달 상태를 설정할 수 있도록 구현하였습니다.
 + **이벤트 버블링**을 통해 행정구역 버튼 이벤트를 제어하였습니다.
 + **크롬 개발자 도구**를 통해 사용되지 않는 코드를 확인하고 수정하였습니다.
-
-## :earth_asia: 브라우저
-:bulb: __데스크톱 네이버 웨일, 모바일 사파리, 삼성 인터넷, 리눅스 크로미움에서도 사용 가능합니다.__  
-브라우저|버전|데스크탑|모바일
-:---:|:---:|:---:|:---:
-<img src="https://icons.iconarchive.com/icons/google/chrome/64/Google-Chrome-icon.png"/>|Latest|:white_check_mark:|:white_check_mark:
-<img src="https://img.icons8.com/color/64/000000/ms-edge-new.png"/>|Latest|:white_check_mark:|
-|<img src="https://icons.iconarchive.com/icons/tatice/cristal-intense/64/Internet-Explorer-icon.png"/>|11|:white_check_mark:|
 
 ## :package: 도구
 :bulb: __ESLint와 Prettier는 VSC 익스텐션과 함께 사용하였습니다.__  
@@ -127,5 +124,9 @@
 ### 웹팩 + 바벨 로더로 파일 통합 시, 화살표 함수가 변환되지 않는 경우:droplet:  
 :arrow_right: 웹팩 설정 파일에 **target** 프로퍼티를 설정하여 해결하였습니다.
 
-### 스크린**:droplet:  
-:arrow_right: 웹팩 설정 파일에 target 프로퍼티를 주어 해결하였습니다.
+### 예상과 다른 Tab 초점 이동:droplet:  
+:arrow_right: 마크업 구조를 수정하고 tabindex 속성을 통해 해결하였습니다.
+
+# :sunglasses: 후기
+미니 프로젝트로 그림 그리기 앱을 만들어 봐서 간단할 줄 알았습니다. 하지만 막상 개발을 시작 해 보니 원을 그리는 거 부터 난관이었습니다. 처음으로 삼각함수를 응용해 좌표값을 알아냈고 
+어려웠던 만큼 새로운 도전을 해봤다는 점과 알게 된 지식 혹은 지나쳐왔던 것을 되새길 수 있었습니다. 
