@@ -101,12 +101,13 @@
 
 ## :package: 도구
 :bulb: __ESLint와 Prettier는 VSC 익스텐션과 함께 사용하였습니다.__  
+
 도구|목적
 :---:|:---:
 <img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=ESLint&logoColor=white" width="160" height="50"/>|**코드 분석**을 통해 실수를 줄여 주기 위해 사용하였습니다.
 <img src="https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=Prettier&logoColor=white" width="160" height="50"/>|**일관된 스타일**을 적용시키기 위해 사용하였습니다.
 <img src="https://img.shields.io/badge/Babel-F9DC3E?style=flat-square&logo=Babel&logoColor=white" width="160" height="50"/>|ES6 코드를 **ES5 코드로 변환**시켜 주기 위해 사용하였습니다.
-<img src="https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=Webpack&logoColor=white" width="160" height="50"/>| **분산된 파일을 통합**시켜 주기 위해 사용하였습니다.
+<img src="https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=Webpack&logoColor=white" width="160" height="50"/>|**분산된 파일을 통합**시켜 주기 위해 사용하였습니다.
 
 ## :sweat_drops: 문제
 ### 이해되지 않는 코드들:droplet:  
